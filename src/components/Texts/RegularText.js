@@ -9,7 +9,7 @@ import { colors } from '../colors';
 
 const RegularText = props => {
   return (
-    <Text style={styles.RegularText} {...props}>
+    <Text style={styles.txt} {...props}>
       {props.children}
     </Text>
   );
@@ -18,9 +18,13 @@ const RegularText = props => {
 export default RegularText;
 
 const styles = StyleSheet.create({
-  RegularText: {
-    fontSize: wp(5),
+  txt: {
+    fontSize: wp(3.9),
     color: colors.black,
     textAlign: 'left',
+    fontStyle: 'normal',
+
+    letterSpacing: -0.333333,
+    fontFamily: 'Poppins-Bold',
   },
 });

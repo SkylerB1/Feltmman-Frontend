@@ -9,7 +9,7 @@ import { colors } from '../colors';
 
 const LargeText = props => {
   return (
-    <Text style={styles.LargeText} {...props}>
+    <Text style={styles.txt} {...props}>
       {props.children}
     </Text>
   );
@@ -18,9 +18,14 @@ const LargeText = props => {
 export default LargeText;
 
 const styles = StyleSheet.create({
-  LargeText: {
-    fontSize: wp(8),
+  txt: {
+    fontSize: wp(7),
     color: colors.black,
+    letterSpacing: -0.333333,
+    lineHeight:36,
+    fontStyle:'normal',
+    fontWeight:'600',
     textAlign: 'left',
+    fontFamily:'Poppins-Bold'
   },
 });

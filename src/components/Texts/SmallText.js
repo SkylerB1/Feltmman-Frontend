@@ -9,16 +9,20 @@ import { colors } from '../colors';
 
 const SmallText = (props) => {
   return (
-      <Text style={styles.SmallText} {...props} >{ props.children}</Text>
+      <Text style={styles.txt} {...props} >{ props.children}</Text>
   )
 }
 
 export default SmallText
 
 const styles = StyleSheet.create({
-    SmallText: {
-        fontSize: wp(3),
-        color: colors.black,
-        textAlign:'left'
-    }
-})
+  txt: {
+    fontSize: wp(3.7),
+    color: colors.black,
+    textAlign: 'left',
+    fontStyle: 'normal',
+
+    letterSpacing: -0.333333,
+    fontFamily: 'Poppins-Bold',
+  },
+});
