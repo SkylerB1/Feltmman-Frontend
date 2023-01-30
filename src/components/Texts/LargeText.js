@@ -8,11 +8,7 @@ import React from 'react';
 import { colors } from '../colors';
 
 const LargeText = props => {
-  return (
-    <Text style={styles.txt} {...props}>
-      {props.children}
-    </Text>
-  );
+  return <Text style={[styles.txt, props.style]}>{props.children}</Text>;
 };
 
 export default LargeText;

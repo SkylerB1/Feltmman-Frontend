@@ -1,19 +1,21 @@
-import { StyleSheet, Text } from 'react-native'
+import {StyleSheet, Text} from 'react-native';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 
-import React from 'react'
-import { colors } from '../colors';
+import React from 'react';
+import {colors} from '../colors';
 
-const SmallText = (props) => {
+const SmallText = props => {
   return (
-      <Text style={styles.txt} {...props} >{ props.children}</Text>
-  )
-}
+    <Text style={styles.txt} {...props}>
+      {props.children}
+    </Text>
+  );
+};
 
-export default SmallText
+export default SmallText;
 
 const styles = StyleSheet.create({
   txt: {

@@ -15,7 +15,6 @@ export default Container;
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    padding: '5%',
     backgroundColor: '#FFFFFF',
   },
 });
